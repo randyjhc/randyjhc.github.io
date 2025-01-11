@@ -1,0 +1,18 @@
+h1, h2, h3, h4, h5, h6, p, li {
+    font-weight: 100;
+}
+
+.custom-nav {
+    opacity: 0.8;
+}
+
+html {
+    scroll-padding-top: 60px;
+}
+
+canvas.board {
+    /* border: 2px solid #000; */
+    background-color: #f5deb3; /* Board color */
+    /* width: 25%; */
+    aspect-ratio: 1/1;
+}
