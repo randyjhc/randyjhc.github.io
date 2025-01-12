@@ -12,7 +12,12 @@ html {
 
 canvas.board {
     /* border: 2px solid #000; */
-    background-color: #f5deb3; /* Board color */
+    /* background-color: #f5deb3; */
     /* width: 25%; */
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
+    /* max-width: 75%; */
+}
+
+canvas.score {
+
 }
