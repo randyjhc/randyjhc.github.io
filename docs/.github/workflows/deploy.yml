@@ -3,6 +3,7 @@ name: Minify and Deploy to GitHub Pages
 on:
   push:
     branches: [main, test-workflow]
+  workflow_dispatch:
 
 jobs:
   build-deploy:
