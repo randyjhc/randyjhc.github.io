@@ -3,7 +3,7 @@ const fs = require("fs");
 const { minify } = require("html-minifier-terser");
 
 (async () => {
-  const html = fs.readFileSync("index.html", "utf-8");
+  const html = fs.readFileSync("docs/index.html", "utf-8");
 
   const minified = await minify(html, {
     collapseWhitespace: true,
