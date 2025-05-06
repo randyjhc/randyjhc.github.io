@@ -25,10 +25,13 @@ jobs:
         run: |
           mkdir -p dist
           node minify.js
+    
+      - name: Show contents of docs folder
+        run: ls -R docs
 
-      # - name: Deploy to GitHub Pages
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_branch: test-workflow
-      #     publish_dir: ./dist
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: publish
+          publish_dir: ./dist
